@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,9 @@
 </head>
 <body>
     
-<div class="info" id="info">
+<!-- <div class="info" id="info">
     <h2> Informace </h2>
 
-    <div class="info-info">
-        a
-    </div>
-            
     <div class="info-udaje">
         <div class="info-pozice">
             <p class="description"> Ředitel firmy: </p>
@@ -44,7 +40,7 @@
             <p class="description"> krizm@ekodom.cz </p>
         </div>
     </div>
-</div>
+</div> -->
 
 </body>
 </html>

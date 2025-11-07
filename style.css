@@ -4,29 +4,30 @@
     box-sizing: border-box;
 }
 .body{
-    background-color: rgb(37, 36, 36);
-}
-.menu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: #343a40;
+    height: 200vh;
     width: 100%;
-    height: 75px;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.top-container{
+    background-color: #343a40;
     color: white;
-    background-color: rgb(24, 23, 23);
-    border: black 2px solid;
-    position: fixed;
+}
+.main-header{
+    width: 100%;
+    height: 200px;
+    background-color: #1e1e1e;
+}
+.logo{
+    width: 350px;
 }
 h1{
     font-size: 50px;
-}
-.menu-a{
-    transition: 0.25s;
-}
-.menu-a:hover{
-    text-decoration: underline;
-    color: rgb(196, 190, 190);
-    transition: 0.25s;
 }
 h2{
     font-size: 40px;
@@ -38,13 +39,7 @@ a{
 .letak-img{
     width: 50%;
 }
-.letak{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.info{
+/* .info{
     width: 100%;
     height: 50vh;
     background-color: rgb(24, 23, 23);
@@ -61,4 +56,4 @@ a{
 }
 .description{
     padding-top: 10px;
-}
+} */

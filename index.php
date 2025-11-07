@@ -4,10 +4,6 @@
 
 <div class="body">
 
-    <div class="letak">
-        <img src="pictures/letak-finished.jpg" alt="" class="letak-img" id="letak">
-    </div>
-
 </div>
 
 <?php
