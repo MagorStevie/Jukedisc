@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .body{
-    background-color: #343a40;
+    background-color: #868e96;
     height: 200vh;
     width: 100%;
 }
@@ -17,11 +17,72 @@
 .top-container{
     background-color: #343a40;
     color: white;
+    display: flex;
+    flex-direction: row;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.clicker_img{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart_img{
+    width: 80px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.profile-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-icon_img{
+    width: 80px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.search-window{
+    height: 40px;
+    width: 70vh;
+    padding: 6px 6px 6px 50px;
+    display: flex;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: 1px solid #d8d8d8; 
+    background-image: url(pictures/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position-y: 4px;
+    background-position-x: 6px;
 }
 .main-header{
     width: 100%;
-    height: 200px;
+    height: 40px;
     background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.header-things h2{
+    font-size: 20px;
 }
 .logo{
     width: 350px;
@@ -39,21 +100,78 @@ a{
 .letak-img{
     width: 50%;
 }
-/* .info{
+.aktuality{
     width: 100%;
-    height: 50vh;
-    background-color: rgb(24, 23, 23);
-    border: black 2px solid;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
     color: white;
-    padding: 20px;
-    font-size: 22px;
 }
-.info-udaje{
+.aktuality_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 80%;
+    height: 55vh;
+    outline: 2px solid #343a40;
+}
+.btn-left{
+    position: absolute;
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    font-size: 25px;
+    left: 200px;
+}
+.btn-right{
+    position: absolute;
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    font-size: 25px;
+    right: 200px;
+}
+.santa-guitar{
+    width: 100%;
+    height: 55vh;
+    border-radius: 30px;
+    background-image: url(pictures/santa-guitar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+}
+.sluzby{
+    width: 100%;
+    background-color: #343a40;
+    height: 60vh;
+    color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
-    width: 100%;
+    align-items: center;
+    flex-direction: row;
 }
-.description{
-    padding-top: 10px;
-} */
+.nase-sluzby, .sluzby-spolecnost, .sluzby-komunita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dolu{
+    padding-bottom: 30px;
+}
+p{
+    padding: 5px;
+    font-size: 20px;
+
+}
+.btn-dole{
+    padding: 10px 20px 10px 20px;
+    margin-top: 40px;
+    color: white;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    font-size: 20px;
+}
