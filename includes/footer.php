@@ -41,5 +41,33 @@
         </div>
     </div>
 
+    <div class="social">
+        <div class="social-news">
+            <h2> S námi vám neunikne žádná novinka </h2>
+            <ul class="tips">
+                <li class="lol"> Žhavé novinky </li>
+                <li class="lol"> Lákavé slevy </li>
+                <li class="lol"> Tipy pro zlepšení hraní </li>
+                <li class="lol"> Zajímavé akce </li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h2> Sociální sítě </h2>
+
+            <div class="bytwo">
+                <div class="one">
+                    <div> <img src="pictures/instagram-icon.png" alt="" class="icon"> Instagram: <a href="https://www.instagram.com/jukedisc_/"> jukedisc_ </a> </div>
+                    <div> <img src="pictures/facebook-icon.png" alt="" class="icon"> Facebook: nemáme </div>
+                </div>
+                <div class="two">
+                    <div> <img src="pictures/youtube-icon.png" alt="" class="icon"> Youtbue: nemáme </div>
+                    <div> <img src="pictures/twitter-icon.png" alt="" class="icon"> Twitter: nemáme </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>

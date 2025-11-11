@@ -21,7 +21,7 @@
 
     <div class="clicker_img">
       <div class="profile-icon">
-        <img src="pictures/profile-icon.png " alt="" class="profile-icon_img">
+        <a href="register.php"> <img src="pictures/profile-icon.png " alt="" class="profile-icon_img"> </a>
       </div>
 
       <div class="cart">
