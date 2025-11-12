@@ -9,6 +9,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .container2{
     background-color: #868e96;
@@ -119,7 +120,7 @@ a{
 
 .aktuality{
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,29 +162,120 @@ a{
     background-position-y: -50px;
 }
 .list{
-    display: grid;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: row;
     width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
     height: 250vh;
     color: white;
-}
-.bythree{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    padding-top: 150px;
 }
 .item{
+    display: flex;
+    flex-direction: column;
     background-color: #343a40;
-    width: 30vh;
-    height: 30vh;
+    width: 50vh;
+    height: 70vh;
     border-radius: 30px;
     font-size: 22px;
-    display: flex;
     justify-content: center;
     align-items: center;
     outline: #1e1e1e 3px solid;
+}
+.item p{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.item h2{
+    font-size: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.item-img{
+    display: flex;
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    background-color: #868e96;
+    border-radius: 20px;
+    outline: #1e1e1e 2px solid;
+}
+.line{
+    text-decoration: line-through;
+    color: #868e96f6;
+}
+
+
+.nakup{
+    display: flex;
+    width: 80%;
+    height: 150vh;
+    background-color: #343a40;
+    margin-top: 50px;
+    outline: #1e1e1e 2px solid;
+    border-radius: 20px;
+    color: white
+}
+.nakup-item-img{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    background-color: #d8d8d8;
+    outline: #1e1e1e 3px solid;
+    border-radius: 20px;
+    margin: 30px;
+}
+.nakup-name{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    flex-direction: column;
+}
+.nakup-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 24px;    
+    background-color: #868e96;
+    border-radius: 20px;
+    outline: #1e1e1e 2px solid;
+    flex-wrap: wrap;
+}
+.nakup-price{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin-top: 100px;
+}
+.nakup-line{
+    text-decoration: line-through;
+    color: #868e96f6;
+    font-size: 30px;
+}
+.price{
+    border-radius: 30px;
+    display: flex;
+    font-size: 50px;
+}
+.btn-price{
+    background-color: red;
+    width: 450px;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    outline: none;
 }
 
 
@@ -205,10 +297,6 @@ a{
 }
 .dolu{
     padding-bottom: 30px;
-}
-p{
-    padding: 5px;
-    font-size: 20px;
 }
 .btn-dole{
     padding: 10px 20px 10px 20px;

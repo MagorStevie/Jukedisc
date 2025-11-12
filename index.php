@@ -15,29 +15,67 @@
 
     <div class="list">
 
-        <div class="bythree">
-            <div class="item"> Kytara </div>
-            <div class="item"> Klávesy </div>
-            <div class="item"> Klavír </div>
-        </div>
-
-        <div class="bythree">
-            <div class="item"> Saxofon </div>
-            <div class="item"> xd </div>
-            <div class="item"> dx </div>
-        </div>
-
-        <div class="bythree">
-            <div class="item"> Činely </div>            
-            <div class="item"> Kopák </div>
-            <div class="item"> Tung Tung Sahur </div>
-        </div>
-
-        <div class="bythree">
-            <div class="item"> Tralalero </div>                    
-            <div class="item"> Crejzy Dave </div>
-            <div class="item"> IShowSpeed </div>
-        </div>
+            <a href="nakup-guitar.php" class="item"> 
+                <img src="pictures/akustika-k.png" alt="" class="item-img">
+                    <h2> Kytara </h2>
+                    <p class="line"> 2 500 Kč </p>
+                    <p> Cena: 2 000 Kč </p> 
+            </a>
+            <a href="" class="item">
+                <img src="pictures/klavesy.png" alt="" class="item-img"> 
+                <h2> Klávesy </h2>
+                <p> Cena: 1 600 Kč </p>
+            </a>
+            <a href="" class="item">
+                <img src="pictures/klavir.png" alt="" class="item-img">
+                <h2> Klavír </h2>
+                <p> Cena: 12 500 Kč </p> 
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/saxophone.png" alt="" class="item-img">
+                <h2> Saxofon </h2>
+                <p> Cena: 6 540 Kč </p>    
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/pricna-fletna.png" alt="" class="item-img">
+                <h2> Příčná flétna </h2>
+                <p> Cena: 1 650 Kč </p>    
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>            
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>                    
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>
+            <a href="" class="item"> 
+                <img src="pictures/" alt="" class="item-img">
+                <h2>  </h2>
+                <p> Cena: </p>    
+            </a>
 
     </div>
 

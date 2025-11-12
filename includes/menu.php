@@ -11,7 +11,7 @@
     <!-- link na excalidraw: https://excalidraw.com/#json=CRVlpRHsa24WkudflvdVS,ugSN3OK7OK8YEAAioizmsg -->
 
   <div class="top-container">
-    <img src="pictures/logo+obrazek.png" alt="" class="logo">
+    <a href="index.php"> <img src="pictures/logo+obrazek.png" alt="" class="logo"> </a>
 
     <div class="search">
       <input type="search" 
@@ -25,7 +25,7 @@
       </div>
 
       <div class="cart">
-        <img src="pictures/shopping-cart.png" alt="" class="cart_img"> 
+        <a href="shopping-list.php"> <img src="pictures/shopping-cart.png" alt="" class="cart_img">  </a>
       </div>
     </div>
 
