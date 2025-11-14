@@ -5,11 +5,11 @@
 }
 .container{
     background-color: #868e96;
-    height: 300vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
 }
 .container2{
     background-color: #868e96;
@@ -112,9 +112,85 @@ a{
 }
 
 
-.registration{
+.registration-center{
     display: flex;
-    width: 100%;
+    justify-content: end;
+    align-items: center;
+    width: 40%;
+    height: 80vh;
+}
+.registration-nadpis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    width: 400px;   
+    background-color: #5f646a;
+    outline: #484b4f 3px solid;
+}
+.registration-data{
+    width: 45%;
+    height: 70vh;
+    margin-top: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background-color: #343a40;
+    border-radius: 30px;
+    outline: #1e1e1e 3px solid;
+}
+.reg-text{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.reg-mensi-text{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.reg-password{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.reg-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+    color: white;
+    width: 250px;
+    height: 60px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.log-in{
+    display: flex;
+    color: #c2d0dd;
+    background-color: #484b4f;
+    outline: #1e1e1e 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 15px;
 }
 
 
@@ -132,7 +208,8 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    width: 80%;
+    margin-top: 30px;
+    width: 100%;
     height: 55vh;
     outline: 2px solid #343a40;
 }
@@ -153,7 +230,8 @@ a{
     right: 200px;
 }
 .santa-guitar{
-    width: 100%;
+    width: 1000px;
+    display: flex;
     height: 55vh;
     border-radius: 30px;
     background-image: url(pictures/santa-guitar.jpeg);
@@ -164,13 +242,10 @@ a{
 .list{
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
-    height: 250vh;
     color: white;
     padding-top: 150px;
 }
@@ -281,7 +356,7 @@ a{
 
 .sluzby{
     width: 100%;
-    background-color: #343a40;
+    background-color: #282a2c;
     height: 40vh;
     color: white;
     display: flex;

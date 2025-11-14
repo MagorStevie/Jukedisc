@@ -57,7 +57,7 @@
 
             <div class="bytwo">
                 <div class="one">
-                    <div> <img src="pictures/instagram-icon.png" alt="" class="icon"> Instagram: <a href="https://www.instagram.com/jukedisc_/"> jukedisc_ </a> </div>
+                    <a href="https://www.instagram.com/jukedisc_/"> <div> <img src="pictures/instagram-icon.png" alt="" class="icon"> Instagram:  jukedisc_ </div> </a> 
                     <div> <img src="pictures/facebook-icon.png" alt="" class="icon"> Facebook: nemáme </div>
                 </div>
                 <div class="two">

@@ -5,7 +5,6 @@
 <div class="container">
 
     <div class="aktuality">
-        
         <div class="aktuality_img">
             <button class="btn-left"> < </button>
             <div class="santa-guitar"></div>
@@ -14,69 +13,24 @@
     </div>
 
     <div class="list">
+<?php 
+    $json = file_get_contents('products.json');
+    $products = json_decode($json, true);
 
-            <a href="nakup-guitar.php" class="item"> 
-                <img src="pictures/akustika-k.png" alt="" class="item-img">
-                    <h2> Kytara </h2>
-                    <p class="line"> 2 500 Kč </p>
-                    <p> Cena: 2 000 Kč </p> 
-            </a>
-            <a href="" class="item">
-                <img src="pictures/klavesy.png" alt="" class="item-img"> 
-                <h2> Klávesy </h2>
-                <p> Cena: 1 600 Kč </p>
-            </a>
-            <a href="" class="item">
-                <img src="pictures/klavir.png" alt="" class="item-img">
-                <h2> Klavír </h2>
-                <p> Cena: 12 500 Kč </p> 
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/saxophone.png" alt="" class="item-img">
-                <h2> Saxofon </h2>
-                <p> Cena: 6 540 Kč </p>    
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/pricna-fletna.png" alt="" class="item-img">
-                <h2> Příčná flétna </h2>
-                <p> Cena: 1 650 Kč </p>    
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>            
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>                    
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>
-            <a href="" class="item"> 
-                <img src="pictures/" alt="" class="item-img">
-                <h2>  </h2>
-                <p> Cena: </p>    
-            </a>
+    foreach ($products as $product) {
+        $popis = (mb_strlen($product['popis'], 'UTF-8') > 50) ? mb_substr($product['popis'], 0, 50, 'UTF-8') . '...' : $product['popis'];
+        echo('
 
+    <div class="list">
+            <a class="item" href="nakup.php?id=' . $product['id'] . '">   
+                <img src="pictures/' . $product['id'] . '" alt="" class="item-img">
+                    <h2>' . $product['nazev'] . '</h2>
+                    <p>' . $popis . '</p>
+                    <p>' . $product['cena'] . '</p> 
+            </a>
+    </div>');
+    }
+?>
     </div>
 
 </div>

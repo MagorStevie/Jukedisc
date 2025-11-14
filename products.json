@@ -1,0 +1,65 @@
+[
+    {
+    "id": "example1",
+    "nazev": "Akustická kytara",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+    {
+    "id": "example2",
+    "nazev": "Saxofon",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example3",
+    "nazev": "Klavír",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example4",
+    "nazev": "Příčná flétna",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example5",
+    "nazev": "Klávesy",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example6",
+    "nazev": "Example 6",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example7",
+    "nazev": "Example 7",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example8",
+    "nazev": "Example 8",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  },
+  {
+    "id": "example9",
+    "nazev": "Example 9",
+    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cena": "2 000 Kč",
+    "obrazek": "produkt.webp"
+  }
+]
