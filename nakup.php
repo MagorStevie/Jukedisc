@@ -40,7 +40,7 @@ if (isset($_GET['id'])) {
     <div class="container">
         <div class="nakup">
             <div class="nakup-img">
-                <img src=" ' . $obrazek . ' " alt="" class="nakup-item-img">
+                <img src="pictures/' . $obrazek . ' " alt="" class="nakup-item-img">
             </div>
             <div class="nakup-name">
                 <h2>' . $nazev . '</h2>

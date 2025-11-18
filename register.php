@@ -15,14 +15,14 @@
             <input type="email" placeholder="Email" class="reg-text">
             <div>
                 <input type="text" placeholder="Město" class="reg-mensi-text">
-                <input type="number"" placeholder="PSČ" max="99999" maxlength="5" class="reg-mensi-text">
+                <input type="number" placeholder="PSČ" max="99999" maxlength="5" class="reg-mensi-text">
             </div>
             <input type="text" placeholder="Ulice" class="reg-text">
             <input type="password" placeholder="Heslo" class="reg-password">
             <input type="password" placeholder="Kontrola hesla" class="reg-text">
             
         <button class="reg-btn"> Registrovat </button>
-        <a href="" class="log-in"> Log In </a>
+        <a href="login.php" class="log-in"> Log In </a>
 
         </div>
 

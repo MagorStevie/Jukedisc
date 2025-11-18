@@ -23,7 +23,7 @@
 
     <div class="list">
             <a class="item" href="nakup.php?id=' . $product['id'] . '">   
-                <img src="pictures/' . $product['id'] . '" alt="" class="item-img">
+                <img src="pictures/' . $product['obrazek'] . '" alt="" class="item-img">
                     <h2>' . $product['nazev'] . '</h2>
                     <p>' . $popis . '</p>
                     <p>' . $product['cena'] . '</p> 

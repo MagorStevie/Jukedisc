@@ -3,63 +3,63 @@
     "id": "example1",
     "nazev": "Akustická kytara",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "2 070 Kč",
+    "obrazek": "akustika-k.png"
   },
     {
     "id": "example2",
     "nazev": "Saxofon",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "7 800 Kč",
+    "obrazek": "saxophone.png"
   },
   {
     "id": "example3",
     "nazev": "Klavír",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "162 900 Kč",
+    "obrazek": "klavir.png"
   },
   {
     "id": "example4",
     "nazev": "Příčná flétna",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "6 970 Kč",
+    "obrazek": "pricna-fletna.png"
   },
   {
     "id": "example5",
     "nazev": "Klávesy",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "4 560 Kč",
+    "obrazek": "klavesy.png"
   },
   {
     "id": "example6",
-    "nazev": "Example 6",
+    "nazev": "Baskytara",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "8 420 Kč",
+    "obrazek": "baskytara.jpg"
   },
   {
     "id": "example7",
-    "nazev": "Example 7",
+    "nazev": "Aktivní reprobox",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "12 500 Kč",
+    "obrazek": "reprobox.png"
   },
   {
     "id": "example8",
-    "nazev": "Example 8",
+    "nazev": "Studiový mikrofon",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "3 740 Kč",
+    "obrazek": "mikrofon.png"
   },
   {
     "id": "example9",
-    "nazev": "Example 9",
+    "nazev": "Zobcová flétna",
     "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "cena": "2 000 Kč",
-    "obrazek": "produkt.webp"
+    "cena": "320 Kč",
+    "obrazek": "zobcova-fletna.png"
   }
 ]
