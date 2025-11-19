@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    color: black;
+    font-family: "Stack Sans Text";
+    background-color: #efecec;
+    overflow-x: hidden;
+}
+
+/*FLEX */
+ul,
+.produkt,
+.produktn,
+.pic,
+.nabidka,
+.onas,
+.kontakt,
+.footer,
+.onas_hero,
+.team,
+.kos,
+.kontakt_main,
+.login,
+.login form,
+.produkt_main,
+.popis,
+.l,
+.onas_hero h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nabidka,
+.onas,
+.kontakt,
+.footer,
+.onas_hero,
+.team,
+.kos,
+ul,
+.login form,
+.login {
+    flex-direction: column;
+}
+
+.logo {
+    height: 40px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    z-index: 999;
+}
+
+header a {
+    float: left;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+header a.active {
+    color: white;
+}
+
+.head-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head-right {
+    float: right;
+}
+
+.head-left {
+    float: left;
+}
+
+.search {
+    width: 250px;
+}
+
+
+.nabidka h1 {
+    margin: 30px;
+}
+
+.nabidka {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.produkty,
+.produktyn,
+.ky,
+.ba,
+.uk,
+.pr,
+.el {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.produktyn {
+    justify-content: center;
+}
+
+.produkt,
+.produktn {
+    border: rgb(183, 183, 183) solid 1px;
+    border-radius: 20px;
+    width: 170px;
+    height: 280px;
+    padding: 20px;
+    background-color: white;
+}
+
+.produktn:hover {
+    scale: 110%;
+}
+
+.produkt img,
+.produktn img {
+    height: 250px;
+}
+
+.pic {
+    height: fit-content;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/back.webp);
+    height: 100vh;
+}
+
+.kos {
+    padding-top: 150px;
+}
+
+.nabidka,
+.onas,
+.kontakt,
+.footer,
+.onas_hero,
+.team {
+    padding: 25px;
+    gap: 20px;
+}
+
+.open-btn {
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.255);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-overlay:hover {
+    cursor: crosshair;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kontakt {
+    padding: 30px 100px;
+    padding-top: 120px;
+}
+
+.kontakt_main {
+    flex-direction: column;
+    gap: 50px;
+    width: 60%;
+}
+
+.h2 {
+    margin-bottom: 15px;
+}
+
+.kontakt_main .a {
+    cursor: pointer;
+    padding: 9px 14px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+
+.team ul {
+    gap: 5px;
+    font-size: 17px;
+}
+
+.onas_hero {
+    padding-top: 120px;
+}
+
+.onas p,
+.onas_hero p {
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+}
+
+.bottom_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom img {
+    height: 25px;
+}
+
+.bottom a {
+    padding: 5px;
+}
+
+.ins img {
+    height: 30px;
+}
+
+.ins {
+    width: 100%;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    border-radius: 20px;
+    border: 2px black solid;
+    padding: 5px;
+    left: 5%;
+}
+
+.login {
+    padding-top: 150px;
+}
+
+.form-zprava {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 5px;
+    resize: none;
+}
+
+.login h2 {
+    padding: 10px 20px 50px 20px;
+}
+
+.submit,
+.popis button {
+    border: black 2px solid;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.formin {
+    border-radius: 15px;
+    width: 250px;
+    height: 40px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.footer {
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+/*Katalog */
+.katalog {
+    font-family: "Stack Sans Text";
+    overflow-x: hidden;
+    padding-top: 150px;
+}
+
+.katalog_main {
+    display: flex;
+}
+
+.parametry button {
+    border: none;
+    font-size: 25px;
+    padding: 11px 16px;
+    background-color: #efecec;
+    border: 2px solid gray;
+    border: hidden;
+
+}
+
+.parametry button:hover {
+    cursor: pointer;
+    padding: 9.5px 15px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.ba,
+.uk,
+.pr,
+.el,
+.ky {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.parametry {
+    width: 400px;
+    border: 2px solid gray;
+    margin-left: 50px;
+    border-radius: 15px;
+    padding: 25px 5px;
+    gap: 50px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.katalog_main .produkty {
+    padding: 30px 45px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.katalog_main .produkt {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.produkt_main,
+.popis {
+    flex-direction: column;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.produkt_main {
+    padding: 20px 15px;
+    width: 600px;
+}
+
+.produkt_main p {
+    padding-top: 11px;
+    font-size: 20px;
+}
+
+.popis {
+    height: 100%;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+
+.katalog_main .produkt img {
+    height: 180px;
+}
+
+.l {
+    flex-direction: row;
+    width: fit-content;
+}
+
+.produkt_main h3 {
+    font-size: 17px;
+}
+
+@media screen and (max-width:1300px) {
+    .popis p {
+        font-size: 15px;
+    }
+
+    .katalog_main {
+        flex-direction: column;
+    }
+
+    .parametry {
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 5px;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .parametry button {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .katalog_main .produkty {
+        padding: 15px 35px;
+    }
+
+    .katalog_main .produkt {
+        gap: 10px;
+        font-size: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .katalog_main .produkt img {
+        height: 100px;
+    }
+
+    .popis p {
+        font-size: 10px;
+        justify-content: space-around;
+    }
+
+
+    .produkt_main {
+        padding: 15px 8px;
+        width: 400px;
+    }
+
+    .produkt_main p {
+        padding-top: 8px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .logo {
+        height: 30px;
+    }
+
+    header h2 {
+        font-size: 17px;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    .head-right,
+    .head_,
+    .head-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head-centered a {
+        float: none;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header a {
+        padding: 5px 6px;
+    }
+
+    .search {
+        width: 150px;
+    }
+
+    .produkt img {
+        height: 150px;
+    }
+
+    .a {
+        font-size: 14px;
+    }
+
+    .onas_hero h2 {
+        font-size: 17px;
+    }
+
+    .nabidka,
+    .onas,
+    .kontakt,
+    .footer,
+    .onas_hero,
+    .team {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .team ul {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    .onas_hero {
+        padding-top: 120px;
+    }
+
+    .onas p,
+    .onas_hero p {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .bottom {
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .bottom_right {
+        gap: 10px;
+    }
+
+    .bottom img {
+        height: 18px;
+    }
+
+    .bottom a {
+        padding: 3px;
+    }
+
+    .ins img {
+        height: 25px;
+    }
+
+    .nabidka {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .produkty {
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login {
+        padding-top: 150px;
+    }
+
+    .login h2 {
+        font-size: 17px;
+    }
+
+    label,
+    input {
+        margin-bottom: 5px;
+    }
+
+    .submit {
+        border: black 2px solid;
+        padding: 7px;
+    }
+
+    label {
+        padding-right: 5px;
+    }
+
+    .form-zprava {
+        width: 300px;
+        height: 100px;
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+
+    .nabidka h1 {
+        margin: 10px;
+    }
+
+    /*Katalog */
+    .produkt_main p {
+        padding-top: 8px;
+        font-size: 12px;
+    }
+
+    .parametry {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .produkt {
+        height: 50%;
+        padding: 50px 25px;
+    }
+
+    .produkt_main {
+        font-size: 15px;
+    }
+
+    .katalog_main .produkt {
+        width: 85vw;
+        height: 120%;
+    }
+
+    .produkty {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .a {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .produktn {
+        width: 90%;
+    }
+
+}

@@ -2,7 +2,7 @@
     include "includes/menu.php";
 ?>
 
-    <div class="container2">
+<div class="container2">
 
     <div class="registration-center">
         <div class="registration-nadpis">
@@ -10,6 +10,7 @@
         </div>
     </div>
 
+    <div class="registration-data-center">
         <div class="registration-data">
             <input type="text" placeholder="Jméno nebo přezdívka" class="reg-text">
             <input type="email" placeholder="Email" class="reg-text">
@@ -21,12 +22,12 @@
             <input type="password" placeholder="Heslo" class="reg-password">
             <input type="password" placeholder="Kontrola hesla" class="reg-text">
             
-        <button class="reg-btn"> Registrovat </button>
+        <a href="#"> <button class="reg-btn"> Registrovat </button> </a>
         <a href="login.php" class="log-in"> Log In </a>
 
         </div>
-
     </div>
+</div>
 
 <?php
     include "includes/footer.php";

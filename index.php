@@ -12,6 +12,10 @@
         </div>
     </div>
 
+    <div class="nabidka">
+        <h2> Nabídka produktů: </h2>
+    </div>
+
     <div class="list">
 <?php 
     $json = file_get_contents('products.json');

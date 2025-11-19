@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Jukedisc</title>
 </head>
 <body>
+
+  <script>
+      function openPopup() {
+          document.getElementById("myModal").style.display = "flex";
+      }
+
+      function closePopup() {
+          document.getElementById("myModal").style.display = "none";
+      }
+  </script>
 
     <!-- link na excalidraw: https://excalidraw.com/#json=CRVlpRHsa24WkudflvdVS,ugSN3OK7OK8YEAAioizmsg -->
 
@@ -32,15 +42,15 @@
   </div>
 
   <header id="myHeader" class="main-header">
-    <div class="header-things"> <a href=""> <h2> Kytary </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Bicí </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Zvuk </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Dechy </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Klávesy </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Záznamová média </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Studio </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Kabely </h2> </a> </div>
-    <div class="header-things"> <a href=""> <h2> Další věci... </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Kytary </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Bicí </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Zvuk </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Dechy </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Klávesy </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Záznamová média </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Studio </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Kabely </h2> </a> </div>
+    <div class="header-things"> <a href="" onclick="openPopup()"> <h2> Další věci... </h2> </a> </div>
   </header>
 
 
@@ -58,6 +68,14 @@ function myFunction() {
   }
 }
 </script>
+
+            <div class="modal" id="myModal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closePopup()"> &times; </span>
+                    <h2> Došlo k chybě! </h2>
+                    <p> Zkuste to později </p>
+                </div>
+            </div>
 
 </body>
 </html>

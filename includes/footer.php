@@ -7,7 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-        
+
+<script>
+    function openPopup() {
+        document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
+
     <div class="sluzby">
         <div class="nase-sluzby">
             <h2 class="dolu"> Naše služby </h2>
@@ -16,7 +26,7 @@
             <p> něco </p>
             <p> něco </p>
             <div class="btn-sluzby">
-                <button class="btn-dole"> Kontaktujte nás </button>
+                <button class="btn-dole" onclick="openPopup()"> Kontaktujte nás </button>
             </div>
         </div>
         <div class="sluzby-spolecnost">
@@ -26,7 +36,7 @@
             <p> něco </p>
             <p> něco </p>
             <div class="btn-sluzby">
-                <button class="btn-dole"> Nejčastější otázky </button>
+                <button class="btn-dole" onclick="openPopup()"> Info o nás </button>
             </div>
         </div>
         <div class="sluzby-komunita">
@@ -36,7 +46,7 @@
             <p> něco </p>
             <p> něco </p>
             <div class="btn-sluzby">
-                <button class="btn-dole"> Proč zrovna nás </button>
+                <button class="btn-dole" onclick="openPopup()"> Proč zrovna nás </button>
             </div>
         </div>
     </div>
@@ -68,6 +78,14 @@
 
         </div>
     </div>
+
+            <div class="modal" id="myModal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closePopup()"> &times; </span>
+                    <h2> Došlo k chybě! </h2>
+                    <p> Zkuste to později </p>
+                </div>
+            </div>
 
 </body>
 </html>
