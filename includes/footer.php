@@ -1,91 +1,39 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-
-<script>
-    function openPopup() {
-        document.getElementById("myModal").style.display = "flex";
-    }
-
-    function closePopup() {
-        document.getElementById("myModal").style.display = "none";
-    }
-</script>
-
-    <div class="sluzby">
-        <div class="nase-sluzby">
-            <h2 class="dolu"> Naše služby </h2>
-            <p> něco </p>
-            <p> něco </p>
-            <p> něco </p>
-            <p> něco </p>
-            <div class="btn-sluzby">
-                <button class="btn-dole" onclick="openPopup()"> Kontaktujte nás </button>
-            </div>
+<footer class="site-footer">
+    <div class="site-footer-main">
+        <div class="footer-brand">
+            <a href="index.php" aria-label="Jukedisc – úvodní stránka">
+                <img src="pictures/logo+obrazek.png" alt="Jukedisc" class="footer-logo">
+            </a>
+            <p>Hudební nástroje a vybavení pro každý nový začátek i velké vystoupení.</p>
         </div>
-        <div class="sluzby-spolecnost">
-            <h2 class="dolu"> O společnosti </h2>
-            <p> něco </p>
-            <p> něco </p>
-            <p> něco </p>
-            <p> něco </p>
-            <div class="btn-sluzby">
-                <button class="btn-dole" onclick="openPopup()"> Info o nás </button>
-            </div>
-        </div>
-        <div class="sluzby-komunita">
-            <h2 class="dolu"> Komunita </h2>           
-            <p> něco </p>
-            <p> něco </p>
-            <p> něco </p>
-            <p> něco </p>
-            <div class="btn-sluzby">
-                <button class="btn-dole" onclick="openPopup()"> Proč zrovna nás </button>
-            </div>
+
+        <nav class="footer-column" aria-label="Obchod">
+            <h2>Obchod</h2>
+            <a href="index.php">Domů</a>
+            <a href="index.php#produkty">Nabídka produktů</a>
+            <a href="shopping-list.php">Nákupní košík</a>
+        </nav>
+
+        <nav class="footer-column" aria-label="Váš účet">
+            <h2>Váš účet</h2>
+            <a href="register.php">Registrace</a>
+            <a href="login.php">Přihlášení</a>
+        </nav>
+
+        <div class="footer-column footer-social">
+            <h2>Sledujte nás</h2>
+            <a href="https://www.instagram.com/jukedisc_/" target="_blank" rel="noopener noreferrer">
+                <img src="pictures/instagram-icon.png" alt="" class="icon">
+                Instagram <span>@jukedisc_</span>
+            </a>
         </div>
     </div>
 
-    <div class="social">
-        <div class="social-news">
-            <h2> S námi vám neunikne žádná novinka </h2>
-            <ul class="tips">
-                <li class="lol"> Žhavé novinky </li>
-                <li class="lol"> Lákavé slevy </li>
-                <li class="lol"> Tipy pro zlepšení hraní </li>
-                <li class="lol"> Zajímavé akce </li>
-            </ul>
-        </div>
-
-        <div class="social-media">
-            <h2> Sociální sítě </h2>
-
-            <div class="bytwo">
-                <div class="one">
-                    <a href="https://www.instagram.com/jukedisc_/"> <div> <img src="pictures/instagram-icon.png" alt="" class="icon"> Instagram:  jukedisc_ </div> </a> 
-                    <div> <img src="pictures/facebook-icon.png" alt="" class="icon"> Facebook: nemáme </div>
-                </div>
-                <div class="two">
-                    <div> <img src="pictures/youtube-icon.png" alt="" class="icon"> Youtbue: nemáme </div>
-                    <div> <img src="pictures/twitter-icon.png" alt="" class="icon"> Twitter: nemáme </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="site-footer-bottom">
+        <p>&copy; <?= date('Y') ?> Jukedisc</p>
+        <a href="index.php">Najdi rytmus ve svém srdci.</a>
     </div>
-
-            <div class="modal" id="myModal" style="display: none;">
-                <div class="modal-content">
-                    <span class="close" onclick="closePopup()"> &times; </span>
-                    <h2> Došlo k chybě! </h2>
-                    <p> Zkuste to později </p>
-                </div>
-            </div>
-
+</footer>
+<script src="script.js" defer></script>
 </body>
 </html>

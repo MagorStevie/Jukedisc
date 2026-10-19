@@ -2,63 +2,72 @@
     {
     "id": "example1",
     "nazev": "Akustická kytara",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Kytary",
+    "popis": "Akustická kytara pro domácí hraní, zpěv s doprovodem i první hudební krůčky.",
     "cena": "2 070 Kč",
     "obrazek": "akustika-k.png"
   },
     {
     "id": "example2",
     "nazev": "Saxofon",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Dechové nástroje",
+    "popis": "Saxofon s výrazným zvukem pro sólovou hru, kapelu i hudební experimentování.",
     "cena": "7 800 Kč",
     "obrazek": "saxophone.png"
   },
   {
     "id": "example3",
     "nazev": "Klavír",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Klávesové nástroje",
+    "popis": "Klavír pro každodenní cvičení, výuku i domácí muzicírování.",
     "cena": "162 900 Kč",
     "obrazek": "klavir.png"
   },
   {
     "id": "example4",
     "nazev": "Příčná flétna",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Dechové nástroje",
+    "popis": "Příčná flétna pro melodickou hru, studium hudby i společné hraní v souboru.",
     "cena": "6 970 Kč",
     "obrazek": "pricna-fletna.png"
   },
   {
     "id": "example5",
     "nazev": "Klávesy",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Klávesové nástroje",
+    "popis": "Klávesy pro objevování melodií, domácí cvičení i vlastní hudební nápady.",
     "cena": "4 560 Kč",
     "obrazek": "klavesy.png"
   },
   {
     "id": "example6",
     "nazev": "Baskytara",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Kytary",
+    "popis": "Baskytara pro pevný rytmický základ při hraní s kapelou i při cvičení.",
     "cena": "8 420 Kč",
     "obrazek": "baskytara.jpg"
   },
   {
     "id": "example7",
     "nazev": "Aktivní reprobox",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Zvuková technika",
+    "popis": "Aktivní reprobox pro ozvučení zkoušek, menších akcí a dalších hudebních prostorů.",
     "cena": "12 500 Kč",
     "obrazek": "reprobox.png"
   },
   {
     "id": "example8",
     "nazev": "Studiový mikrofon",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Zvuková technika",
+    "popis": "Studiový mikrofon pro nahrávání zpěvu, nástrojů i mluveného slova.",
     "cena": "3 740 Kč",
     "obrazek": "mikrofon.png"
   },
   {
     "id": "example9",
     "nazev": "Zobcová flétna",
-    "popis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "kategorie": "Dechové nástroje",
+    "popis": "Zobcová flétna pro snadný začátek s hudbou, výuku i domácí hraní.",
     "cena": "320 Kč",
     "obrazek": "zobcova-fletna.png"
   }

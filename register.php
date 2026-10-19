@@ -2,32 +2,52 @@
     include "includes/menu.php";
 ?>
 
-<div class="container2">
-
-    <div class="registration-center">
-        <div class="registration-nadpis">
-            <h1 class="registration"> Registrace </h1>
+<main class="auth-page" id="main-content" tabindex="-1">
+    <section class="auth-card">
+        <div class="auth-intro">
+            <p class="section-eyebrow">Přidejte se k nám</p>
+            <h1>Vytvořit účet</h1>
+            <p>Mějte své hudební vybavení a nákupy vždy po ruce.</p>
         </div>
-    </div>
 
-    <div class="registration-data-center">
-        <div class="registration-data">
-            <input type="text" placeholder="Jméno nebo přezdívka" class="reg-text">
-            <input type="email" placeholder="Email" class="reg-text">
-            <div>
-                <input type="text" placeholder="Město" class="reg-mensi-text">
-                <input type="number" placeholder="PSČ" max="99999" maxlength="5" class="reg-mensi-text">
+        <div class="auth-fields">
+            <label class="auth-field">
+                <span>Jméno nebo přezdívka</span>
+                <input type="text" placeholder="Jak vám máme říkat?" autocomplete="name">
+            </label>
+            <label class="auth-field">
+                <span>E-mail</span>
+                <input type="email" placeholder="vas@email.cz" autocomplete="email">
+            </label>
+            <div class="auth-field-row">
+                <label class="auth-field">
+                    <span>Město</span>
+                    <input type="text" placeholder="Město" autocomplete="address-level2">
+                </label>
+                <label class="auth-field">
+                    <span>PSČ</span>
+                    <input type="text" inputmode="numeric" placeholder="110 00" autocomplete="postal-code">
+                </label>
             </div>
-            <input type="text" placeholder="Ulice" class="reg-text">
-            <input type="password" placeholder="Heslo" class="reg-password">
-            <input type="password" placeholder="Kontrola hesla" class="reg-text">
-            
-        <a href="#"> <button class="reg-btn"> Registrovat </button> </a>
-        <a href="login.php" class="log-in"> Log In </a>
-
+            <label class="auth-field">
+                <span>Ulice</span>
+                <input type="text" placeholder="Ulice a číslo popisné" autocomplete="street-address">
+            </label>
+            <label class="auth-field">
+                <span>Heslo</span>
+                <input type="password" placeholder="Zvolte si heslo" autocomplete="new-password">
+            </label>
+            <label class="auth-field">
+                <span>Kontrola hesla</span>
+                <input type="password" placeholder="Zadejte heslo znovu" autocomplete="new-password">
+            </label>
         </div>
-    </div>
-</div>
+
+        <p class="auth-notice">Registrace zatím není propojena s uživatelským účtem.</p>
+        <button class="auth-submit" type="button" disabled>Registrace bude brzy dostupná</button>
+        <p class="auth-switch">Už u nás máte účet? <a href="login.php">Přihlásit se</a></p>
+    </section>
+</main>
 
 <?php
     include "includes/footer.php";
