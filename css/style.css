@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,19 +10,6 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 100px;
-}
-.container2{
-    background-color: #989da3;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    color: white;
-}
-.sticky{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 .top-container{
     background: #757575;
@@ -77,7 +63,7 @@
     font-size: 15px;
     border-radius: 10px;
     outline: 1px solid #d8d8d8; 
-    background-image: url(pictures/lupa.png);
+    background-image: url(../pictures/lupa.png);
     background-repeat: no-repeat;
     background-size: 120px;
     background-position-y: 4px;
@@ -94,12 +80,6 @@
     align-items: center;
     flex-direction: row;
 }
-.header-things h2{
-    font-size: 20px;
-}
-.header-things a{
-    cursor: pointer;
-}
 .logo{
     width: 350px;
 }
@@ -113,168 +93,6 @@ a{
     text-decoration: none;
     color: white;
 }
-.nabidka{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    color: white;
-}
-.nabidka h2{
-    font-size: 80px;
-    text-decoration: underline;
-    background: #43464a;
-    padding: 30px;
-    border-radius: 60px;
-    outline: #1e1e1e 3px solid;
-    box-shadow: 5px 10px 20px #000000ca;
-}
-.modal{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-.modal-content{
-    background: #43464a;
-    text-align: center;
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-    width: 400px;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    outline: black 4px solid;
-    animation: slideUp 0.2s ease;
-}
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 40px;
-  font-weight: 600px;
-}
-
-
-
-.registration-center, .login-center{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 40%;
-    height: 80vh;
-}
-.registration-nadpis, .login-nadpis{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    border-radius: 30px;
-    width: 400px;
-    background: #5F646A;
-    background: radial-gradient(circle, rgba(95, 100, 106, 1) 50%, rgba(85, 87, 94, 1) 100%);
-    outline: #484b4f 3px solid;
-    box-shadow: 5px 10px 20px #0000007d;
-}
-.registration-data{
-    width: 1000px;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #4c575c;
-    background: radial-gradient(circle, rgba(76, 87, 92, 1) 0%, rgba(52, 58, 64, 1) 60%, rgba(31, 37, 41, 1) 100%);
-    border-radius: 30px;
-    outline: #1e1e1e 3px solid;
-    box-shadow: 0px 0px 20px #000000;
-}
-.registration-data input{
-    box-shadow: 5px 10px 20px #0000007d;
-}
-.registration-data-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
-    width: 80%;
-}
-.login-data-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
-    width: 80%;
-}
-.login-data{
-    width: 800px;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #4c575c;
-    background: radial-gradient(circle, rgba(76, 87, 92, 1) 0%, rgba(52, 58, 64, 1) 60%, rgba(31, 37, 41, 1) 100%);
-    border-radius: 30px;
-    outline: #1e1e1e 3px solid;
-}
-.reg-text, .login-text{
-    width: 600px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #d8d8d8;
-    padding-left: 15px;
-    font-size: 18px;
-    margin-top: 20px;
-}
-.reg-mensi-text{
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #d8d8d8;
-    padding-left: 15px;
-    font-size: 18px;
-    margin-top: 20px;
-}
-.reg-password, .login-password{
-    width: 600px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #d8d8d8;
-    padding-left: 20px;
-    font-size: 18px;
-    margin-top: 20px;
-}
-.reg-btn, .login-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    border-radius: 15px;
-    background-color: #1e1e1e;
-    color: white;
-    width: 300px;
-    height: 70px;
-    padding: 30px;
-    margin-top: 40px;
-}
-.log-in{
-    display: flex;
-    color: #c2d0dd;
-    background-color: #606266;
-    outline: #1e1e1e 1px solid;
-    border-radius: 15px;
-    padding: 8px;
-    font-size: 16px;
-    margin-top: 30px;
-}
-
 
 .aktuality{
     width: 100%;
@@ -300,74 +118,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.btn-left{
-    position: absolute;
-    border-radius: 50px;
-    padding: 0px 5px 0px 5px;
-    display: flex;
-    font-size: 25px;
-    left: 200px;
-}
-.btn-right{
-    position: absolute;
-    border-radius: 50px;
-    padding: 0px 5px 0px 5px;
-    display: flex;
-    font-size: 25px;
-    right: 200px;
-}
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    padding: 50px;
-    color: white;
-}
-.item{
-    display: flex;
-    flex-direction: column;
-    background: #4c575c;
-    background: radial-gradient(circle, rgba(76, 87, 92, 1) 0%, rgba(52, 58, 64, 1) 60%, rgba(31, 37, 41, 1) 100%);
-    width: 50vh;
-    height: 70vh;
-    border-radius: 30px;
-    font-size: 22px;
-    justify-content: center;
-    align-items: center;
-    outline: #1e1e1e 3px solid;
-    box-shadow: 5px 10px 20px #000000ae;
-}
-.item p{
-    width: 80%;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-}
-.item h2{
-    font-size: 30px;
-    width: 80%;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-}
-.item-img{
-    display: flex;
-    width: 400px;
-    height: 500px;
-    object-fit: contain;
-    background: #9097a3;
-    background: radial-gradient(circle, rgba(144, 151, 163, 1) 0%, rgba(109, 114, 120, 1) 100%);
-    border-radius: 20px;
-    outline: #1e1e1e 2px solid;
-    margin-bottom: 30px;
-    box-shadow: 5px 10px 20px #000000ae;
-}
-.line{
-    text-decoration: line-through;
-    color: #868e96f6;
-}
-
 
 .nakup{
     display: flex;
@@ -424,30 +174,6 @@ a{
     flex-wrap: wrap;
     box-shadow: 5px 10px 20px #000000ae;
 }
-.nakup-price{
-    display: flex;
-    font-weight: 600;
-    flex-direction: column;
-    font-size: 24px;
-    margin-top: 100px;
-}
-.nakup-podrobnejsi-info{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    border-radius: 20px;
-    padding: 50px;
-    font-size: 24px;
-    margin-left: 40px;
-    background: #6D7278;
-    background: radial-gradient(circle, rgba(109, 114, 120, 1) 0%, rgba(92, 92, 92, 1) 100%);
-    outline: #282a2c 2px solid;
-    box-shadow: 5px 10px 20px #000000ae;
-}
-.podrobnejsi-info2{
-    margin-top: 50px;
-}
 .price{
     border-radius: 30px;
     display: flex;
@@ -466,403 +192,7 @@ a{
     outline: none;
     box-shadow: 5px 10px 20px #000000ae;
 }
-
-
-.sluzby{
-    width: 100%;
-    background: #282A2C;
-    background: radial-gradient(circle, rgba(40, 42, 44, 1) 45%, rgba(0, 0, 0, 1) 100%);
-    height: 40vh;
-    outline: black 2px solid;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
-.nase-sluzby, .sluzby-spolecnost, .sluzby-komunita{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.dolu{
-    padding-bottom: 30px;
-}
-.btn-dole{
-    padding: 10px 20px 10px 20px;
-    margin-top: 40px;
-    color: white;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    font-size: 20px;
-}
-.social{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row;
-    height: 40vh;
-    background-color: #868e96;
-    color: white;
-}
-.social-news{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.social-news h2{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-}
-.login p{
-    padding-top: 20px;
-}
-.tips{
-    display: grid;
-    gap: 8px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-}
-.social-media{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-.social-media h2{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-}
-.bytwo{
-    display: grid;
-    flex-direction: column;
-    padding-top: 30px;
-    font-size: 20px;
-    gap: 20px;
-}
-.one{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.two{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.icon{
-    width: 50px;
-}
-.lol{
-    line-height: 30px;
-}
-.lol::before{
-    content: url(../pictures/checkmark.png);
-}
-.lol::marker{
-    content: none;
-}
-
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes slideUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-
-@media screen and (max-width: 850px) {
-    .aktuality_img{
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 30vh;
-    }
-    .santa-guitar{
-        width: 300px;
-        height: 30vh;
-    }
-    .logo{
-        width: 150px;
-    }
-    .profile-icon_img{
-        width: 30px;
-        padding: 1px;
-    }
-    .cart_img{
-        width: 30px;
-        padding: 1px;
-    }
-    .list{
-        padding: 20px;
-    }
-    .item{
-        width: 30vh;
-        height: 50vh;
-        font-size: 20px;
-    }
-    .item-img{
-        width: 200px;
-        height: 300px;
-        margin-bottom: 30px;
-    }
-    .search-window{
-        height: 25px;
-        width: 200px;
-    }
-    .social-news h2{
-        font-size: 30px;
-        padding-left: 20px;
-    }
-    .social-media h2{
-        font-size: 30px;
-    }
-    .one{
-        font-size: 14px;
-        flex-direction: column;
-        display: flex;
-    }
-    .two{
-        font-size: 14px;
-        flex-direction: column;
-        display: flex;
-    }
-    .icon{
-        width: 30px;
-    }
-    .bytwo{
-        padding-left: 50px;
-    }
-    .dolu{
-        text-align: center;
-        font-size: 30px;
-    }
-    .btn-dole{
-        margin-top: 30px;
-        font-size: 14px;
-    }
-    .registration-nadpis{
-        padding: 30px;
-        border-radius: 30px;
-        width: 300px;
-    }
-    .reg-text, .login-text{
-        width: 400px;
-        height: 30px;
-        padding-left: 15px;
-        font-size: 16px;
-    }
-    .reg-password, .login-password{
-        width: 400px;
-        height: 30px;
-        padding-left: 15px;
-        font-size: 16px;
-    }
-    .reg-mensi-text{
-        width: 200px;
-        height: 30px;
-        padding-left: 15px;
-        font-size: 16px;
-    }
-    .registration{
-        font-size: 40px;
-    }
-    .registration-center{
-        justify-content: center;
-        align-items: center;
-    }
-    .registration-data-center{
-        margin-bottom: 100px;
-        width: 80%;
-    }
-    .container2{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .login-center{
-        justify-content: center;
-        align-items: center;
-    }
-    .nakup-item-img{
-        max-width: 200px;
-        max-height: 500px;
-        margin: 10px;
-    }
-    .nakup-name h2{
-        font-size: 30px;
-    }
-    .nakup-item{
-        margin-top: 10px;
-        margin-left: 0px;
-        padding: 10px;
-        font-size: 16px;
-        flex-wrap: wrap;
-    }
-    .nakup-item p{
-        font-size: 16px;
-    }
-    .nakup-price{
-        font-weight: 600;
-        margin-top: 20px;
-    }
-    .price{
-        font-size: 30px;
-    }
-    .btn-price{
-        max-width: 200px;
-        margin-top: 0px;
-        padding: 10px;
-        font-size: 16px;
-    }
-    .nakup-img{
-        width: 400px;
-        height: 200px;
-    }
-    .nakup-podrobnejsi-info{
-        max-width: 70%;
-        padding: 30px;
-        font-size: 16px;
-        margin-left: 30px;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .aktuality_img{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 40vh;
-        width: 80%;
-    }
-    .santa-guitar{
-        width: 600px;
-        height: 40vh;
-    }
-    .logo{
-        width: 150px;
-    }
-    .header-things h2{
-        font-size: 16px;
-    }
-    .profile-icon_img{
-        width: 50px;
-        padding: 2px;
-    }
-    .cart_img{
-        width: 50px;
-        padding: 2px;
-    }
-    .search-window{
-        height: 30px;
-        width: 40vh;
-        padding: 6px 6px 6px 50px;
-        background-size: 80px;
-    }
-    .social-news h2{
-        font-size: 30px;
-        padding-left: 20px;
-    }
-    .social-media h2{
-        font-size: 30px;
-    }
-    .registration-nadpis{
-        padding: 30px;
-        border-radius: 30px;
-        width: 300px;
-    }
-    .registration{
-        font-size: 40px;
-    }
-    .registration-center{
-        justify-content: center;
-        align-items: center;
-    }
-    .registration-data-center{
-        margin-bottom: 100px;
-        width: 80%;
-    }
-    .container2{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .login-center{
-        justify-content: center;
-        align-items: center;
-    }
-    .nakup-item-img{
-        width: 300px;
-        height: 500px;
-        margin: 20px;
-    }
-    .nakup-item{
-        margin-top: 10px;
-        margin-left: 0px;
-        padding: 20px;
-        font-size: 20px;
-        flex-wrap: wrap;
-    }
-    .nakup-price{
-        font-weight: 600;
-        margin-top: 50px;
-    }
-    .price{
-        font-size: 40px;
-    }
-    .btn-price{
-    width: 300px;
-    margin-top: 50px;
-    padding: 10px;
-    font-size: 18px;
-    }
-    .nakup-img{
-        width: 600px;
-        height: 400px;
-    }
-    .nakup-podrobnejsi-info{
-    width: 80%;
-    padding: 30px;
-    font-size: 20px;
-    margin-left: 40px;
-    }
-    .nabidka h2{
-        font-size: 50px;
-    }
-}   
-
-@media screen and (max-width: 1500px) {
-     .container2{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-        .registration-data-center{
-        margin-bottom: 100px;
-        width: 80%;
-    }
-       .registration-nadpis{
-        padding: 30px;
-        border-radius: 30px;
-        width: 400px;
-    }
-        .registration-center{
-        justify-content: center;
-        align-items: center;
-    }
-        .login-center{
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* Homepage refresh */
+/* Homepage and product catalog */
 body{
     background: #f5f3ef;
     color: #202020;
@@ -922,17 +252,6 @@ body{
     padding: 12px 24px;
     background: #292929;
     box-shadow: 0 4px 14px #0000001c;
-}
-.header-things{
-    flex: 0 0 auto;
-}
-.header-things h2{
-    font-size: 14px;
-    font-weight: 500;
-    transition: color .2s ease;
-}
-.header-things a:hover h2{
-    color: #ff9a68;
 }
 .home-page.container{
     align-items: stretch;
@@ -1185,6 +504,7 @@ body{
     }
 }
 
+/* Product details */
 .product-page.container{
     align-items: stretch;
     min-height: 60vh;
@@ -1364,6 +684,7 @@ body{
     }
 }
 
+/* Shopping cart */
 .cart{
     position: relative;
 }
@@ -1584,6 +905,7 @@ body{
     }
 }
 
+/* Search and account forms */
 .search{
     gap: 8px;
 }
@@ -1740,6 +1062,7 @@ body{
     }
 }
 
+/* Shared navigation and footer */
 .main-header{
     position: sticky;
     top: 0;
@@ -1904,6 +1227,7 @@ body{
     }
 }
 
+/* Motion */
 .hero-copy{
     animation: hero-arrive .65s cubic-bezier(.2, .7, .25, 1) both;
 }
@@ -1958,6 +1282,7 @@ body{
     }
 }
 
+/* Accessibility and product filters */
 .skip-link{
     position: fixed;
     z-index: 1000;

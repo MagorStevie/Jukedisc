@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . "/includes/products.php";
+
 if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
@@ -7,8 +9,7 @@ if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) {
 }
 
 if (isset($_GET['id'])) {
-    $json = file_get_contents('products.json');
-    $products = json_decode($json, true);
+    $products = load_products();
 
     foreach ($products as $product) {
         if ($product['id'] === $_GET['id']) {

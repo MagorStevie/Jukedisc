@@ -1,6 +1,7 @@
 <?php
-$products = json_decode(file_get_contents('products.json'), true);
-$products = is_array($products) ? $products : [];
+require_once __DIR__ . "/includes/products.php";
+
+$products = load_products();
 $query = isset($_GET['q']) && is_string($_GET['q']) ? trim($_GET['q']) : '';
 $selectedCategory = isset($_GET['category']) && is_string($_GET['category']) ? $_GET['category'] : '';
 $minPriceInput = isset($_GET['min_price']) && is_string($_GET['min_price']) ? $_GET['min_price'] : '';
@@ -10,17 +11,6 @@ $maxPrice = $maxPriceInput !== '' && ctype_digit($maxPriceInput) ? (int) $maxPri
 $filterError = ($minPriceInput !== '' && $minPrice === null)
     || ($maxPriceInput !== '' && $maxPrice === null)
     || ($minPrice !== null && $maxPrice !== null && $minPrice > $maxPrice);
-$normalizeSearch = function ($value) {
-    $value = strtr($value, [
-        'á' => 'a', 'č' => 'c', 'ď' => 'd', 'é' => 'e', 'ě' => 'e',
-        'í' => 'i', 'ň' => 'n', 'ó' => 'o', 'ř' => 'r', 'š' => 's',
-        'ť' => 't', 'ú' => 'u', 'ů' => 'u', 'ý' => 'y', 'ž' => 'z',
-        'Á' => 'a', 'Č' => 'c', 'Ď' => 'd', 'É' => 'e', 'Ě' => 'e',
-        'Í' => 'i', 'Ň' => 'n', 'Ó' => 'o', 'Ř' => 'r', 'Š' => 's',
-        'Ť' => 't', 'Ú' => 'u', 'Ů' => 'u', 'Ý' => 'y', 'Ž' => 'z',
-    ]);
-    return mb_strtolower($value, 'UTF-8');
-};
 $categories = [];
 foreach ($products as $product) {
     if (isset($product['kategorie'])) {
@@ -28,6 +18,28 @@ foreach ($products as $product) {
     }
 }
 $categories = array_values(array_unique($categories));
+
+$visibleProducts = [];
+foreach ($products as $product) {
+    if ($filterError) {
+        break;
+    }
+
+    $searchable = $product['nazev'] . ' ' . $product['popis'] . ' ' . $product['cena'] . ' ' . ($product['kategorie'] ?? '');
+    if ($query !== '' && strpos(normalize_search_text($searchable), normalize_search_text($query)) === false) {
+        continue;
+    }
+
+    $productPrice = product_price_value($product['cena']);
+    if (($selectedCategory !== '' && ($product['kategorie'] ?? '') !== $selectedCategory)
+        || ($minPrice !== null && $productPrice < $minPrice)
+        || ($maxPrice !== null && $productPrice > $maxPrice)) {
+        continue;
+    }
+
+    $visibleProducts[] = $product;
+}
+
 include "includes/menu.php";
 ?>
 
@@ -83,54 +95,28 @@ include "includes/menu.php";
         <?php endif; ?>
 
         <div class="product-grid">
-<?php 
-    $resultCount = 0;
-
-    foreach ($products as $product) {
-        if ($filterError) {
-            break;
-        }
-
-        $searchable = $product['nazev'] . ' ' . $product['popis'] . ' ' . $product['cena'] . ' ' . ($product['kategorie'] ?? '');
-        if ($query !== '' && strpos($normalizeSearch($searchable), $normalizeSearch($query)) === false) {
-            continue;
-        }
-
-        $productPrice = (int) preg_replace('/\D/u', '', $product['cena']);
-        if (($selectedCategory !== '' && ($product['kategorie'] ?? '') !== $selectedCategory)
-            || ($minPrice !== null && $productPrice < $minPrice)
-            || ($maxPrice !== null && $productPrice > $maxPrice)) {
-            continue;
-        }
-
-        $resultCount++;
-        $popis = $product['popis'];
-        $id = htmlspecialchars($product['id'], ENT_QUOTES, 'UTF-8');
-        $nazev = htmlspecialchars($product['nazev'], ENT_QUOTES, 'UTF-8');
-        $obrazek = htmlspecialchars($product['obrazek'], ENT_QUOTES, 'UTF-8');
-        $popis = htmlspecialchars($popis, ENT_QUOTES, 'UTF-8');
-        $cena = htmlspecialchars($product['cena'], ENT_QUOTES, 'UTF-8');
-        echo('
-            <a class="product-card" href="nakup.php?id=' . $id . '">
-                <span class="product-image-wrap">
-                    <img src="pictures/' . $obrazek . '" alt="' . $nazev . '" class="product-image">
-                </span>
-                <span class="product-info">
-                    <h3 class="product-name">' . $nazev . '</h3>
-                    <span class="product-description">' . $popis . '</span>
-                    <span class="product-bottom">
-                        <span class="product-price">' . $cena . '</span>
-                        <span class="product-link">Zobrazit produkt <span aria-hidden="true">→</span></span>
-                    </span>
-                </span>
-            </a>
-        ');
-    }
-
-    if ($resultCount === 0) {
-        echo '<p class="search-empty">Žádné produkty neodpovídají hledání a filtrům. Zkuste upravit hledaný výraz nebo filtry.</p>';
-    }
-?>
+            <?php if ($visibleProducts === []): ?>
+                <p class="search-empty">Žádné produkty neodpovídají hledání a filtrům. Zkuste upravit hledaný výraz nebo filtry.</p>
+            <?php else: ?>
+                <?php foreach ($visibleProducts as $product): ?>
+                    <a class="product-card" href="nakup.php?id=<?= rawurlencode($product['id']) ?>">
+                        <span class="product-image-wrap">
+                            <img
+                                src="pictures/<?= htmlspecialchars($product['obrazek'], ENT_QUOTES, 'UTF-8') ?>"
+                                alt="<?= htmlspecialchars($product['nazev'], ENT_QUOTES, 'UTF-8') ?>"
+                                class="product-image">
+                        </span>
+                        <span class="product-info">
+                            <h3 class="product-name"><?= htmlspecialchars($product['nazev'], ENT_QUOTES, 'UTF-8') ?></h3>
+                            <span class="product-description"><?= htmlspecialchars($product['popis'], ENT_QUOTES, 'UTF-8') ?></span>
+                            <span class="product-bottom">
+                                <span class="product-price"><?= htmlspecialchars($product['cena'], ENT_QUOTES, 'UTF-8') ?></span>
+                                <span class="product-link">Zobrazit produkt <span aria-hidden="true">→</span></span>
+                            </span>
+                        </span>
+                    </a>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </section>
 </main>

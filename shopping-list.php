@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . "/includes/products.php";
+
 if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
@@ -6,7 +8,7 @@ if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 
-$products = json_decode(file_get_contents('products.json'), true);
+$products = load_products();
 $productsById = [];
 foreach ($products as $product) {
     $productsById[$product['id']] = $product;
@@ -61,7 +63,7 @@ foreach ($cart as $id => $quantity) {
     }
 
     $product = $productsById[$id];
-    $unitPrice = (int) preg_replace('/\D/u', '', $product['cena']);
+    $unitPrice = product_price_value($product['cena']);
     $lineTotal = $unitPrice * $quantity;
     $cartTotal += $lineTotal;
     $cartCount += $quantity;
@@ -72,10 +74,6 @@ foreach ($cart as $id => $quantity) {
         'line_total' => $lineTotal,
     ];
 }
-
-$formatPrice = function ($price) {
-    return number_format($price, 0, ',', ' ') . ' Kč';
-};
 
 include "includes/menu.php";
 ?>
@@ -118,7 +116,7 @@ include "includes/menu.php";
                         </a>
                         <div class="cart-item-details">
                             <h2><a href="nakup.php?id=<?= rawurlencode($product['id']) ?>"><?= $safeName ?></a></h2>
-                            <p><?= $formatPrice($item['unit_price']) ?> / ks</p>
+                            <p><?= format_price($item['unit_price']) ?> / ks</p>
                             <form class="cart-quantity-form" action="shopping-list.php" method="post">
                                 <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['cart_csrf_token'], ENT_QUOTES, 'UTF-8') ?>">
                                 <input type="hidden" name="update" value="<?= $safeId ?>">
@@ -128,7 +126,7 @@ include "includes/menu.php";
                             </form>
                         </div>
                         <div class="cart-item-actions">
-                            <strong><?= $formatPrice($item['line_total']) ?></strong>
+                            <strong><?= format_price($item['line_total']) ?></strong>
                             <form action="shopping-list.php" method="post">
                                 <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['cart_csrf_token'], ENT_QUOTES, 'UTF-8') ?>">
                                 <input type="hidden" name="remove" value="<?= $safeId ?>">
@@ -142,7 +140,7 @@ include "includes/menu.php";
             <aside class="cart-summary">
                 <h2>Shrnutí objednávky</h2>
                 <p><span>Počet kusů</span><strong><?= $cartCount ?></strong></p>
-                <p class="cart-total"><span>Celkem</span><strong><?= $formatPrice($cartTotal) ?></strong></p>
+                <p class="cart-total"><span>Celkem</span><strong><?= format_price($cartTotal) ?></strong></p>
                 <p class="cart-summary-note">Součet zahrnuje všechny kusy v košíku.</p>
             </aside>
         </div>
